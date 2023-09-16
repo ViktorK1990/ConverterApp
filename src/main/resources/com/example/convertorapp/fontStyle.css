@@ -1,0 +1,8 @@
+@font-face {
+    font-family: RobotoSlab_black;
+    src: url('RobotoSlab-Black.ttf');
+}
+#converterLabel {
+-fx-font-family: 'RobotoSlab_black' !important;
+-fx-font-size: 33;
+}

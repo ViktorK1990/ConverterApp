@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="320.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.convertorapp.MainController">
+    <children>
+        <AnchorPane layoutX="88.0" layoutY="7.0" prefHeight="80.0" prefWidth="320.0" style="-fx-background-color: #a7a7a7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="converterLabel" alignment="CENTER" layoutX="59.0" layoutY="6.0" prefHeight="70.0" prefWidth="200.0" stylesheets="@fontStyle.css" text="Конвертер" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+                    <font>
+                        <Font name="Bookman Old Style" size="38.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+      <Label alignment="CENTER" layoutY="144.0" prefHeight="61.0" prefWidth="320.0" text="Выбирите способ конвертации" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="currency_switch" layoutX="56.0" layoutY="217.0" mnemonicParsing="false" text="Валюта">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <CheckBox fx:id="weight_switch" layoutX="56.0" layoutY="257.0" mnemonicParsing="false" text="Вес">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <Button fx:id="start_btn" layoutX="87.0" layoutY="294.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" text="Начать">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fx:id="lk_btn" fitHeight="27.0" fitWidth="22.0" layoutX="284.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngwing.com.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="172.0" layoutY="101.0" prefHeight="17.0" prefWidth="94.0" text="Личный кабинет" />
+    </children>
+</AnchorPane>
